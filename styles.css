@@ -541,15 +541,14 @@ button:disabled {
 .label-card {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.42fr) minmax(1.25in, 0.78fr);
-  gap: 0.14in;
+  grid-template-columns: minmax(0, 1fr);
   width: var(--label-w);
   height: var(--label-h);
   overflow: hidden;
   border: 0.018in solid #202832;
   border-radius: 0.08in;
   background: #ffffff;
-  padding: 0.14in 0.14in 0.12in 0.2in;
+  padding: 0.14in 0.16in 0.12in 0.23in;
   color: #121820;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
@@ -569,7 +568,7 @@ button:disabled {
 
 .label-main {
   display: grid;
-  grid-template-rows: 0.72in 0.72in 0.56in 0.35in;
+  grid-template-rows: 0.72in 0.72in 0.52in 0.4in 0.38in;
   gap: 0.08in;
   min-width: 0;
 }
@@ -601,7 +600,7 @@ button:disabled {
   display: block;
   overflow: hidden;
   color: #111820;
-  font-size: 0.24in;
+  font-size: 0.3in;
   font-weight: 860;
   line-height: 1;
   overflow-wrap: anywhere;
@@ -609,7 +608,7 @@ button:disabled {
 }
 
 .customer-box strong {
-  font-size: 0.23in;
+  font-size: 0.3in;
 }
 
 .label-date-grid {
@@ -624,8 +623,15 @@ button:disabled {
 }
 
 .label-date-grid .label-box strong {
-  font-size: 0.17in;
+  font-size: 0.18in;
   white-space: nowrap;
+}
+
+.label-meta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(1.15in, 0.58fr);
+  gap: 0.08in;
+  min-width: 0;
 }
 
 .handwrite-line {
@@ -658,39 +664,29 @@ button:disabled {
 
 .complete-line strong {
   padding: 0 0.04in;
-  font-size: 0.082in;
+  font-size: 0.095in;
   font-weight: 860;
   line-height: 1.05;
   text-transform: uppercase;
   white-space: normal;
 }
 
-.label-side {
+.label-footer-grid {
   display: grid;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns: minmax(0, 1fr) 1.28in;
+  align-items: end;
   gap: 0.1in;
-  align-content: start;
   min-width: 0;
-}
-
-.label-side h2 {
-  margin: 0;
-  color: #111820;
-  font-size: 0.31in;
-  font-weight: 920;
-  line-height: 1.06;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .district-band {
   display: grid;
   place-items: center;
-  min-height: 0.34in;
+  min-height: 0.4in;
   border-radius: 0.06in;
   background: var(--label-color);
   color: #ffffff;
-  font-size: 0.16in;
+  font-size: 0.2in;
   font-weight: 880;
   line-height: 1;
   text-transform: uppercase;
@@ -724,8 +720,9 @@ button:disabled {
 
 .service-mark {
   align-self: end;
-  width: 1.18in;
-  height: 0.35in;
+  justify-self: end;
+  width: 1.25in;
+  height: 0.37in;
   overflow: hidden;
   background: #ffffff;
 }
@@ -738,13 +735,11 @@ button:disabled {
 }
 
 .label-compact {
-  grid-template-columns: minmax(0, 1.5fr) minmax(1in, 0.7fr);
-  gap: 0.1in;
   padding: 0.1in 0.1in 0.08in 0.18in;
 }
 
 .label-compact .label-main {
-  grid-template-rows: 0.43in 0.43in 0.38in 0.25in;
+  grid-template-rows: 0.36in 0.36in 0.28in 0.26in 0.25in;
   gap: 0.055in;
 }
 
@@ -758,19 +753,15 @@ button:disabled {
 
 .label-compact .label-box strong,
 .label-compact .customer-box strong {
-  font-size: 0.18in;
+  font-size: 0.15in;
 }
 
 .label-compact .label-date-grid .label-box strong {
-  font-size: 0.15in;
+  font-size: 0.12in;
 }
 
 .label-compact .complete-line strong {
   font-size: 0.058in;
-}
-
-.label-compact .label-side h2 {
-  font-size: 0.2in;
 }
 
 .label-compact .district-band {

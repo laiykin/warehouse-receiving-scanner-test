@@ -354,22 +354,23 @@ function renderLabel(label, template) {
             <strong class="handwrite-line">&nbsp;</strong>
           </div>
         </div>
-        <div class="complete-line">
-          <span class="print-checkbox" aria-hidden="true"></span>
-          <strong>Job is fully received and scheduled</strong>
+        <div class="label-meta-grid">
+          ${state.settings.showDistrictName ? `<div class="district-band">${escapeHtml(district.name)}</div>` : ""}
+          <div class="count-stack">
+            <span>Labels</span>
+            <strong>${state.settings.showSequence ? `${label.sequence} of ${label.totalForJob}` : label.totalForJob}</strong>
+          </div>
+        </div>
+        <div class="label-footer-grid">
+          <div class="complete-line">
+            <span class="print-checkbox" aria-hidden="true"></span>
+            <strong>Job is fully received and scheduled</strong>
+          </div>
+          <div class="service-mark">
+            <img src="./home-services-logo.jpg" alt="Home Services" />
+          </div>
         </div>
       </div>
-      <aside class="label-side">
-        <h2>Job Ready<br />For Install</h2>
-        ${state.settings.showDistrictName ? `<div class="district-band">${escapeHtml(district.name)}</div>` : ""}
-        <div class="count-stack">
-          <span>Labels</span>
-          <strong>${state.settings.showSequence ? `${label.sequence} of ${label.totalForJob}` : label.totalForJob}</strong>
-        </div>
-        <div class="service-mark">
-          <img src="./home-services-logo.jpg" alt="Home Services" />
-        </div>
-      </aside>
     </article>
   `;
 }
