@@ -724,11 +724,17 @@ button:disabled {
 
 .service-mark {
   align-self: end;
-  color: #111820;
-  font-size: 0.16in;
-  font-weight: 920;
-  line-height: 0.95;
-  text-transform: uppercase;
+  width: 1.18in;
+  height: 0.35in;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.service-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .label-compact {
@@ -786,7 +792,8 @@ button:disabled {
 }
 
 .label-compact .service-mark {
-  font-size: 0.11in;
+  width: 0.95in;
+  height: 0.27in;
 }
 
 .toast {

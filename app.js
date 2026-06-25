@@ -366,7 +366,9 @@ function renderLabel(label, template) {
           <span>Labels</span>
           <strong>${state.settings.showSequence ? `${label.sequence} of ${label.totalForJob}` : label.totalForJob}</strong>
         </div>
-        <div class="service-mark">Home Services</div>
+        <div class="service-mark">
+          <img src="./home-services-logo.jpg" alt="Home Services" />
+        </div>
       </aside>
     </article>
   `;

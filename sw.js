@@ -1,5 +1,13 @@
-const CACHE_NAME = "install-label-printer-v3";
-const APP_SHELL = ["./", "./index.html", "./styles.css?v=12", "./app.js?v=12", "./manifest.webmanifest", "./icon.svg"];
+const CACHE_NAME = "install-label-printer-v4";
+const APP_SHELL = [
+  "./",
+  "./index.html",
+  "./styles.css?v=13",
+  "./app.js?v=13",
+  "./manifest.webmanifest",
+  "./icon.svg",
+  "./home-services-logo.jpg",
+];
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
