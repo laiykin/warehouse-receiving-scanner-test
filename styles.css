@@ -641,22 +641,28 @@ button:disabled {
   background: #ffffff;
 }
 
-.complete-line span {
+.complete-line .print-checkbox {
   display: grid;
   place-items: center;
   align-self: stretch;
   border-right: 0.018in solid #111820;
-  font-size: 0.13in;
-  font-weight: 900;
+}
+
+.complete-line .print-checkbox::after {
+  content: "";
+  width: 0.15in;
+  height: 0.15in;
+  border: 0.018in solid #111820;
+  background: #ffffff;
 }
 
 .complete-line strong {
-  padding: 0 0.06in;
-  font-size: 0.09in;
+  padding: 0 0.04in;
+  font-size: 0.082in;
   font-weight: 860;
-  line-height: 1;
+  line-height: 1.05;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .label-side {
@@ -754,7 +760,7 @@ button:disabled {
 }
 
 .label-compact .complete-line strong {
-  font-size: 0.08in;
+  font-size: 0.058in;
 }
 
 .label-compact .label-side h2 {

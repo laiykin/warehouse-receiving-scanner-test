@@ -355,8 +355,8 @@ function renderLabel(label, template) {
           </div>
         </div>
         <div class="complete-line">
-          <span>X</span>
-          <strong>Job is complete and scheduled</strong>
+          <span class="print-checkbox" aria-hidden="true"></span>
+          <strong>Job is fully received and scheduled</strong>
         </div>
       </div>
       <aside class="label-side">
