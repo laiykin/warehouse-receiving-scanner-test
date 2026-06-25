@@ -1,4 +1,4 @@
-const STORAGE_KEY = "install-label-printer-v1";
+const STORAGE_KEY = "install-label-printer-v2";
 
 const templates = {
   "avery-5164": {
@@ -32,18 +32,17 @@ const templates = {
 };
 
 const defaultDistricts = [
-  { id: "north", name: "North", color: "#00a7c8" },
-  { id: "south", name: "South", color: "#f0b429" },
-  { id: "east", name: "East", color: "#7c55d9" },
-  { id: "west", name: "West", color: "#f26d4f" },
-  { id: "central", name: "Central", color: "#2f9b68" },
+  { id: "61", name: "61", color: "#00a7c8" },
+  { id: "103", name: "103", color: "#f0b429" },
+  { id: "184", name: "184", color: "#7c55d9" },
+  { id: "288", name: "288", color: "#f26d4f" },
 ];
 
 const emptyDraft = {
   customerName: "",
   jobNumber: "",
   installDate: "",
-  districtId: "north",
+  districtId: "61",
   labelCount: 1,
 };
 
@@ -110,7 +109,7 @@ function normalizeJob(job) {
     customerName: String(job.customerName || "").trim(),
     jobNumber: String(job.jobNumber || "").trim(),
     installDate: String(job.installDate || "").trim(),
-    districtId: String(job.districtId || "north"),
+    districtId: String(job.districtId || "61"),
     labelCount: clampNumber(job.labelCount, 1, 99, 1),
     createdAt: String(job.createdAt || new Date().toISOString()),
   };

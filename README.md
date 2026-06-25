@@ -29,7 +29,7 @@ Use `Start at label position` when reusing a partially used sheet.
 
 ## District Colors
 
-District names and colors can be edited in the app. Changes are saved in the browser on that PC.
+Default districts are `61`, `103`, `184`, and `288`. District names and colors can be edited in the app, and more districts can be added later. Changes are saved in the browser on that PC.
 
 ## Run Locally
 

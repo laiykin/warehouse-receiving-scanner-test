@@ -2,7 +2,7 @@
   "name": "Install Label Printer",
   "short_name": "Install Labels",
   "description": "Print district-coded install-ready labels for warehouse jobs.",
-  "start_url": "./?v=labels",
+  "start_url": "./?v=labels11",
   "display": "standalone",
   "background_color": "#eef1f3",
   "theme_color": "#25313f",
